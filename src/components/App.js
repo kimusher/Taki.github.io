@@ -416,7 +416,7 @@ export default class App extends React.Component {
             if (this.state.Players[playerID - 1] instanceof Computer) {
                 this.setState({
                     currentPlayerIDTurn: playerID
-                }, () => setTimeout(this.makeBotPlay.bind(this), 200))
+                }, () => setTimeout(this.makeBotPlay.bind(this), 800))
             }else {
                 this.setState({
                     currentPlayerIDTurn: playerID
